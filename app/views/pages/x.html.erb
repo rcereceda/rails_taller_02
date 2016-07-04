@@ -1,2 +1,14 @@
 <h1>Rodrigo Cereceda Grunert</h1>
-<p>Find me in app/views/pages/x.html.erb</p>
+
+<%= form_tag pages_subscribe_path, method: :post do %>
+	<%= label_tag(:name, "Nombre:") %>
+	<%= text_field_tag :name, nil, placeholder: 'Ingresa tu nombre...' %>
+	<br>
+	<%= label_tag(:email, "Email:") %>
+	<%= text_field_tag :email, nil, placeholder: 'Ingresa tu email...' %>
+	<br>
+	<%= label_tag(:age, "Edad:") %>
+	<%= text_field_tag :age, nil, placeholder: 'Ingresa tu edad...' %>
+	<br>
+	<%= submit_tag "Subscribe", class: 'btn' %>
+<% end %>
