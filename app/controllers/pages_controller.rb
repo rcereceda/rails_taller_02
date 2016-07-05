@@ -12,4 +12,8 @@ class PagesController < ApplicationController
   			alert: "No hemos podido guardar el usuario, inténtalo de nuevo"
   	end
   end
+
+  def landing
+  	render :layout => 'layouts/layout2'
+  end
 end

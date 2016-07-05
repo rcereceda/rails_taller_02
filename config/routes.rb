@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'pages/x'
   post 'pages/subscribe'
+  get 'pages/landing'
   root 'pages#x'
 
   # The priority is based upon order of creation: first created -> highest priority.
